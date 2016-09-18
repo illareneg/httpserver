@@ -1,3 +1,3 @@
 # httpserver
 
-Learn HTTP, utilise in tictactoe project.
+Learn HTTP --> Utilise in tictactoe project.
