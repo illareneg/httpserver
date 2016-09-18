@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B71A09231D86449D008EC4BF /* method.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B71A09211D86449D008EC4BF /* method.cpp */; };
+		B71A09251D8644DA008EC4BF /* protocol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B71A09241D8644DA008EC4BF /* protocol.cpp */; };
 		B7671D2D1D63090900985E6E /* server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7671D2B1D63090900985E6E /* server.cpp */; };
-		B7671D2F1D630D9A00985E6E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7671D2E1D630D9A00985E6E /* main.cpp */; };
 		B7671D321D630E7200985E6E /* message.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7671D301D630E7200985E6E /* message.cpp */; };
 		B7D788191D6B1780001A984B /* connection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7D788171D6B1780001A984B /* connection.cpp */; };
 /* End PBXBuildFile section */
@@ -26,13 +27,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B71A09211D86449D008EC4BF /* method.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = method.cpp; sourceTree = "<group>"; };
+		B71A09221D86449D008EC4BF /* method.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = method.hpp; sourceTree = "<group>"; };
+		B71A09241D8644DA008EC4BF /* protocol.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = protocol.cpp; sourceTree = "<group>"; };
 		B7671D211D6308ED00985E6E /* httpserver */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = httpserver; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7671D2B1D63090900985E6E /* server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = server.cpp; sourceTree = "<group>"; };
 		B7671D2C1D63090900985E6E /* server.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = server.hpp; sourceTree = "<group>"; };
-		B7671D2E1D630D9A00985E6E /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		B7671D301D630E7200985E6E /* message.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = message.cpp; sourceTree = "<group>"; };
 		B7671D311D630E7200985E6E /* message.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = message.hpp; sourceTree = "<group>"; };
-		B7671D331D6311CB00985E6E /* http_protocol.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = http_protocol.hpp; sourceTree = "<group>"; };
+		B7671D331D6311CB00985E6E /* protocol.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = protocol.hpp; sourceTree = "<group>"; };
 		B7D788171D6B1780001A984B /* connection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = connection.cpp; sourceTree = "<group>"; };
 		B7D788181D6B1780001A984B /* connection.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = connection.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,12 +72,14 @@
 			children = (
 				B7671D2B1D63090900985E6E /* server.cpp */,
 				B7671D2C1D63090900985E6E /* server.hpp */,
-				B7671D2E1D630D9A00985E6E /* main.cpp */,
 				B7671D301D630E7200985E6E /* message.cpp */,
 				B7671D311D630E7200985E6E /* message.hpp */,
-				B7671D331D6311CB00985E6E /* http_protocol.hpp */,
+				B7671D331D6311CB00985E6E /* protocol.hpp */,
 				B7D788171D6B1780001A984B /* connection.cpp */,
 				B7D788181D6B1780001A984B /* connection.hpp */,
+				B71A09211D86449D008EC4BF /* method.cpp */,
+				B71A09221D86449D008EC4BF /* method.hpp */,
+				B71A09241D8644DA008EC4BF /* protocol.cpp */,
 			);
 			path = httpserver;
 			sourceTree = "<group>";
@@ -135,10 +140,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B7671D2F1D630D9A00985E6E /* main.cpp in Sources */,
+				B71A09231D86449D008EC4BF /* method.cpp in Sources */,
 				B7671D2D1D63090900985E6E /* server.cpp in Sources */,
 				B7671D321D630E7200985E6E /* message.cpp in Sources */,
 				B7D788191D6B1780001A984B /* connection.cpp in Sources */,
+				B71A09251D8644DA008EC4BF /* protocol.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

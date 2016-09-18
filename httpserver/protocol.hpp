@@ -11,12 +11,12 @@
 
 #include "message.hpp"
 
-class http_protocol
+class protocol
 {
 public:
     virtual message parse_message() const = 0;
     virtual const std::string &get_name() const = 0;
-    virtual ~http_protocol() = default;
+    virtual ~protocol() = default;
 protected:
 };
 
